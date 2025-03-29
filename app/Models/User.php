@@ -63,4 +63,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Todo::class);
     }
+
+    // Define the relationship to the Note model
+    public function notes()
+    {
+        return $this->hasMany(Note::class);
+    }
 }
